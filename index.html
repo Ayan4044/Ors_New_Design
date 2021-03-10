@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+  <title>ORS</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,6 +14,14 @@
   <link rel="stylesheet" href="css/scrollanimation.css"/>
 </head>
 <body>
+
+   
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status"><h1 class="shimmer">ORS </h1></div>
+     
+    </div>
+<!-- End Preloader-->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo"><img src="images/logo.png" style="padding: 5px; height: 55px;"/></a>
@@ -231,7 +239,7 @@
                      
                         </div></div>
                       <div class="col s8"><div class="icon-block"> <p class="center blue-text">Number of Hospitals</p>
-                        <h4 class="center blue-text">200 </h4> <br><a class="btn-floating  info_button blue"><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
+                        <h4 class="center blue-text count">200 </h4> <br><a class="btn-floating  info_button blue"><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
 
                     </div>
                   </div>
@@ -249,7 +257,7 @@
                         </div></div>
                       <div class="col s8"><div class="icon-block"> <p class="center indigo-text">Appointments Taken Today
                       </p>
-                        <h4 class="center indigo-text">2878  </h4> <br><a class="btn-floating  info_button indigo "><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
+                        <h4 class="center indigo-text count">2878  </h4> <br><a class="btn-floating  info_button indigo "><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
 
                     </div>
                   </div>
@@ -266,7 +274,7 @@
                      
                         </div></div>
                       <div class="col s8"><div class="icon-block"> <p class="center cyan-text">Total Online Appointments</p>
-                        <h4 class="center cyan-text">3998103  </h4> <br><a class="btn-floating  info_button cyan"><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
+                        <h4 class="center cyan-text count">3998103  </h4> <br><a class="btn-floating  info_button cyan"><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
 
                     </div>
                   </div>
@@ -321,6 +329,15 @@
   <!--  Scripts-->
   <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>	
+  <script type="text/javascript">	
+    $(window).load(function() { // makes sure the whole site is loaded
+    $('#status').fadeOut(); // will first fade out the loading animation
+    $('#preloader').delay(50).fadeOut(100); // will fade out the white DIV that covers the website.
+    $('body').delay(50).css({'overflow':'visible'});
+    })
+    </script>
+  </body>
   <script src="js/material.js"></script>
   <script src="js/init.js"></script>
   <script src="js/custom.js"></script>
@@ -328,5 +345,5 @@
   <script>
     AOS.init();
   </script>
-  </body>
+
 </html>
