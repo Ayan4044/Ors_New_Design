@@ -25,7 +25,7 @@
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo"><img src="images/logo.png" style="padding: 5px; height: 55px;"/></a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down navbar-fixed">
         <li ><a href="#" class="active ">Home</a></li>
         <li ><a href="#" class="">Appointment</a></li>
         <li ><a href="#" class="">Dashboard</a></li>
@@ -33,6 +33,7 @@
       
 
       <!-- For Mobile View-->
+    
       <ul id="nav-mobile" class="sidenav">
         <img src="images/parallax/background_2.jpg" height="250px"/>
         <li><a href="#"><i class="material-icons">home</i>Home</a></li>
@@ -42,6 +43,12 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -49,13 +56,13 @@
         <br><br>
         <h2 class="header center  text-grey  main_header animate__animated animate__bounce animate__delay-1s">Online Patient Registration System</h2>
         <div class="row center">
-          <div class="col s6 animate__animated animate__fadeInLeft animate__delay-2s"> 
-            <h4 class="header light deep-orange-text header_text">Now getting an OPD appointment, lab reports and blood availability in any government hospital has become online & easy.
+          <div class="col s12 m4 l6 animate__animated animate__fadeInLeft animate__delay-2s"> 
+            <h4 class="header light  header_text ">Now getting an OPD appointment, lab reports and blood availability in any government hospital has become online & easy.
               Stay Home Stay Safe, Stop COVID-19</h4>
           </div>
-          <div class="col s6 animate__animated animate__fadeInRight animate__delay-3s">
+          <div class="col s12 m4 l6 animate__animated animate__fadeInRight animate__delay-2s">
 
-            <a class="waves-effect waves-light btn header_button red ">Book Teleconsultation Appointment</a><br>
+            <a class="waves-effect waves-light btn header_button deep-orange accent-4 ">Book Teleconsultation Appointment</a><br>
             <a class="waves-effect waves-light btn header_button blue">Book Appointment Now</a><br>
             <a class="waves-effect waves-light btn header_button orange" >Blood Availabilty</a><br>
             <a class="waves-effect waves-light btn header_button">Payment</a>
@@ -67,22 +74,22 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="images/parallax/background_2.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax parallax_filter"><img src="images/parallax/background_2.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
     <!-- govt data section-->
     <div class="container">
       <div class="section">
-        <div class="row  animate__animated animate__backInUp animate__delay-3s">
-          <div class="col s12 m4">
+        <div class="row  animate__animated animate__backInUp animate__delay-2s">
+          <div class="col s12 m4 l4">
               <img src="images/govt/digital_india.png" class="image_container"/>
           </div>
 
-          <div class="col s12 m4">
+          <div class="col s12 m4 l4">
             <img src="images/govt/govt_of_it.gif" class="image_container"/>
           </div>
 
-          <div class="col s12 m4">
+          <div class="col s12 m4 l4">
             <img src="images/govt/govt_of_family.png" class="image_container"/>
           </div>
         </div>
@@ -93,7 +100,7 @@
       <div class="container">
         <div class="section">
     
-          <div class="row  animate__animated animate__fadeInUpBig animate__delay-4s">
+          <div class="row  animate__animated animate__fadeInUpBig animate__delay-2s">
             <div class="col s12 center">
               <div class="carousel carousel-slider">
                 <a class="carousel-item" href="#one!"><img src="images/slide/pmcare.jpg" ></a>
@@ -143,7 +150,7 @@
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 m4 l4">
           <div class="card info_card ">
           
               <div class="card-title">
@@ -160,7 +167,7 @@
         
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m4 l4">
           <div class="card info_card ">
           
             <div class="card-title">
@@ -177,7 +184,7 @@
         </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m4 l4">
           <div class="card info_card ">
           
             <div class="card-title">
@@ -201,21 +208,20 @@
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h4 class="header col s12  white-text">Every Hospitals has moved online, why not you?</h4>
-        </div>
+          <h4 class="header center header_text">Every Hospitals has moved online, why stay behind?</h4>
+   
         <div class="row center">
 
-          <div class="col s12 m4">
-            <a class="waves-effect waves-light btn cyan hospital_feature_button">ORS OnBoarding Manual</a></div>
-          <div class="col s12 m4">
-            <a class="waves-effect waves-light btn orange hospital_feature_button">Hospital Join Free</a></div>
-          <div class="col s12 m4">
-            <a class="waves-effect waves-light btn green accent-3 hospital_feature_button">Hospital Login</a></div>
-        </div>"
+          <div class="col s12 m4 l4">
+            <a class="waves-effect waves-light btn btn-large cyan hospital_feature_button">ORS OnBoarding Manual</a></div>
+          <div class="col s12 m4 l4">
+            <a class="waves-effect waves-light btn orange btn-large hospital_feature_button">Hospital Join Free</a></div>
+          <div class="col s12 m4 l4">
+            <a class="waves-effect waves-light btn green btn-large accent-3 hospital_feature_button">Hospital Login</a></div>
+        </div>
       </div>
     </div>
-    <div class="parallax"><img src="images/parallax/backgroun_1.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax  parallax_filter"><img src="images/parallax/backgroun_1.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
 
@@ -229,16 +235,16 @@
           <h4>Highlights</h4>
           <hr/>
             <div class="row">
-              <div class="col s12 m4">
+              <div class="col s12 m6 l4">
                 <div class="card card_data_blue">
             
                   <div class="card-content">
                     <div class="row">
-                      <div class="col s4">  <div class="icon-block">
+                      <div class="col s1 l4 icon_col">  <div class="icon-block">
                         <h4 class="center red-text data_icons"><i class=" red-text material-icons ">health_and_safety</i></h4>
                      
                         </div></div>
-                      <div class="col s8"><div class="icon-block"> <p class="center blue-text">Number of Hospitals</p>
+                      <div class="col s11 l8 data_col"><div class="icon-block"> <p class="center blue-text">Number of Hospitals</p>
                         <h4 class="center blue-text count">200 </h4> <br><a class="btn-floating  info_button blue"><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
 
                     </div>
@@ -246,16 +252,16 @@
                   
                 </div>
               </div>
-              <div class="col s12 m4">
+              <div class="col s12 m6 l4">
                 <div class="card card_data_indigo">
             
                   <div class="card-content">
                     <div class="row">
-                      <div class="col s4">  <div class="icon-block">
+                      <div class="col s1 l4 icon_col">  <div class="icon-block">
                         <h4 class="center red-text data_icons"><i class=" red-text material-icons ">account_circle</i></h4>
                      
                         </div></div>
-                      <div class="col s8"><div class="icon-block"> <p class="center indigo-text">Appointments Taken Today
+                      <div class="col s11 l8 data_col"><div class="icon-block"> <p class="center indigo-text">Appointments Taken Today
                       </p>
                         <h4 class="center indigo-text count">2878  </h4> <br><a class="btn-floating  info_button indigo "><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
 
@@ -264,16 +270,16 @@
                   
                 </div>
               </div>
-              <div class="col s12 m4">
+              <div class="col s12 m6 l4">
                 <div class="card card_data_cyan">
             
                   <div class="card-content">
                     <div class="row">
-                      <div class="col s4">  <div class="icon-block">
+                      <div class="col s1  l4 icon_col">  <div class="icon-block">
                         <h4 class="center red-text data_icons"><i class=" red-text material-icons ">leaderboard</i></h4>
                      
                         </div></div>
-                      <div class="col s8"><div class="icon-block"> <p class="center cyan-text">Total Online Appointments</p>
+                      <div class="col s11 l8 data_col"><div class="icon-block"> <p class="center cyan-text">Total Online Appointments</p>
                         <h4 class="center cyan-text count">3998103  </h4> <br><a class="btn-floating  info_button cyan"><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
 
                     </div>
@@ -328,8 +334,9 @@
 
   <!--  Scripts-->
   <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>	
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>	 -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript">	
     $(window).load(function() { // makes sure the whole site is loaded
     $('#status').fadeOut(); // will first fade out the loading animation
@@ -337,13 +344,14 @@
     $('body').delay(50).css({'overflow':'visible'});
     })
     </script>
+     <script src="js/material.js"></script>
+     <script src="js/init.js"></script>
+     <script src="js/custom.js"></script>
+     <script src="js/scoll.js"></script>
+     <script>
+       AOS.init();
+     </script>
   </body>
-  <script src="js/material.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="js/scoll.js"></script>
-  <script>
-    AOS.init();
-  </script>
+ 
 
 </html>
