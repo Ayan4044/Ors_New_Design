@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  getWidth();
   // End Prealoader
   $('.count').each(function () {
     $(this).prop('Counter',0).animate({
@@ -118,5 +118,22 @@ $(document).ready(function(){
           $( this ).removeClass("pulse");
         }
       );
+
+
+      function getWidth(){
+        $(window).resize(function() {
+          if ($(window).width() < 1150) {
+            $('.icon_col').hide();
+            $('.data_col').removeClass('col s11 l8 ');
+            $('.data_col').addClass('col s12 l12');
+          } else {
+            $('.icon_col').show();
+           // $('.icon_col').addClass('col s1  l4');
+           $('.data_col').removeClass('col s12 l12 ');
+            $('.data_col').addClass('col s11 l8');
+          }
+      }).resize()
+        
+      }
 
 });
