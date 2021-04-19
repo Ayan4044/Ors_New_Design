@@ -2,12 +2,25 @@
 
 
 body {
-    background: #FFFFFF;
+    background: #FAFAFA;
   }
 
 .parallax-container{
-  min-height: 450px;
+  min-height: 480px;
 }
+
+.navbackgroundColor{
+  background-color: rgba(255,255,255,.5) !important;  
+  transition: 1s;
+}
+
+
+.transition {
+  -webkit-transition:  1s; /* For Safari 3.1 to 6.0 */
+  transition:  1s;
+}
+
+
 .header_text{
   font-weight: bold;
   font-size: 28px;
@@ -15,7 +28,7 @@ body {
   text-shadow: 2px 3px 4px rgba(0,0,0,0.19);
 }
 .parallax_filter{
-  filter: blur(15px);
+  filter: blur(2px);
 }
 
 nav ul a:hover {
@@ -59,13 +72,21 @@ nav ul a {
 }
 
 .info_card{
-    background:#FFF;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 70%);
+  transition: 0.5s all;
+  opacity: 0.9;
+    background:#FFFFFF;
     height: 450px;
     border-radius: 20px;
-    border-top: 2px solid #4bc1ff;
-    border-left: 4px solid #4bc1ff;
-    border-right: 4px solid #0288d1 ;
-    border-bottom: 4px solid #0288d1 ;
+    border-top: 1px solid #4bc1ff;
+    border-left: 1px solid #4bc1ff;
+    border-right: 1px solid #0288d1 ;
+    border-bottom: 1px solid #0288d1 ;
+}
+
+.info_card:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  
 }
 
 .hospital_feature_button,.header_button{
@@ -211,7 +232,10 @@ nav ul a {
     font-size: 12px;
   }
   .icon-block h5{
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .data_icons > i{
+    font-size: 70px !important;
   }
 
   
@@ -224,13 +248,24 @@ nav ul a {
 /* --------- css media query --- */
 @media only screen and (max-width:880px){
     .parallax-container {
-        min-height: 550px;
+        min-height: 500px;
         line-height: 0;
         height: auto;
         color: rgba(255,255,255,.9);
     }
+
+
+    .data_icons > i{
+      display: none;
+    }
+
     .header_button{
         font-size: 12px;
+    }
+
+    .card_slider{
+      width: 200px !important;
+      height: 250px  !important;
     }
 
     .hospital_feature_button{
@@ -240,9 +275,11 @@ nav ul a {
 
     .header_text{
         font-size: 20px;
+        margin-top: 5px;
     }
     .main_header{
         font-size: 30px;
+        margin-top: 55px;
     }
 
     .image_container{
@@ -260,4 +297,13 @@ nav ul a {
     .icon-block h5{
       font-size: 16px;
     }
+}
+
+
+/*--------------------- Side Nav OPacity bug *---------------------------*/
+
+
+/*----------------- Card Slider ------------------------*/
+.card_slider{
+  width: 20% !important;
 }

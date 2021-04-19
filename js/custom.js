@@ -1,5 +1,8 @@
 $(document).ready(function(){
   getWidth();
+  getCard();
+  $('#modal1').modal();
+  $('#modal1').modal('open');
   // End Prealoader
   $('.count').each(function () {
     $(this).prop('Counter',0).animate({
@@ -11,6 +14,16 @@ $(document).ready(function(){
             $(this).text(Math.ceil(now));
         }
     });
+});
+
+
+$(window).scroll(function() { // check if scroll event happened
+  if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+    $('.navbackground').removeClass('navbackgroundColor').addClass('transition')
+    $(".navbackground").css("background-color", "#f8f8f8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+  } else {
+    $(".navbackground").css("background-color", "transparent"); // if not, change it back to transparent
+  }
 });
 
   var i = 0,
@@ -123,6 +136,7 @@ $(document).ready(function(){
       function getWidth(){
         $(window).resize(function() {
           if ($(window).width() < 1150) {
+           
             $('.icon_col').hide();
             $('.data_col').removeClass('col s11 l8 ');
             $('.data_col').addClass('col s12 l12');
@@ -136,4 +150,15 @@ $(document).ready(function(){
         
       }
 
+      function getCard(){
+        $(window).resize(function() {
+
+          if ($(window).width() < 950) {
+            $('.carousel-item ').removeClass('card_slider');
+          }
+
+        }).resize()
+      }
+
+   
 });
