@@ -183,13 +183,11 @@ nav ul a {
 
 
   #status {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
+  
+    position: fixed;
+    left: 45%;
     top: 50%;
     background-position: center;
-    margin: -100px 0 0 -100px;
     /* is width and height divided by two */
   }
 
@@ -247,6 +245,17 @@ nav ul a {
 
 /* --------- css media query --- */
 @media only screen and (max-width:880px){
+
+
+  #status {
+  
+    position: fixed;
+    left: 40%;
+    top: 40%;
+    background-position: center;
+    /* is width and height divided by two */
+  }
+
     .parallax-container {
         min-height: 500px;
         line-height: 0;

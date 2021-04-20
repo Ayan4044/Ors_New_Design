@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ORS</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/material.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/animate.min.css" type="text/css" rel="stylesheet"/>
-  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="css/scrollanimation.css"/>
+  <link href="css/material.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/animate.min.css" type="text/css" rel="stylesheet" />
+  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="css/scrollanimation.css" />
 </head>
+
 <body>
 
-   
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="status"><h1 class="shimmer">ORS </h1></div>
-     
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="row">
+      <div class="col s12 m4 l2"></div>
+      <div class="col s12 m4 l8">
+
+        <div id="status">
+          <h1 class="shimmer">ORS </h1>
+        </div>
+
+      </div>
+      <div class="col s12 m4 l2"></div>
     </div>
-<!-- End Preloader-->
+  </div>
+
+  <!-- End Preloader-->
+
+  <div class="body_content">
+
+    <div id="index-banner" class="parallax-container">
+      <!-- Nav bar Start-->
+      <div class="navbar-fixed">
+        <nav class="navbackground navbackgroundColor " role="navigation">
+          <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img src="images/logo.png"
+                style="padding: 5px; height: 55px;" /></a>
+            <ul class="right hide-on-med-and-down navbar-fixed">
+              <li><a href="#" class="active lang " key="home">Home</a></li>
+              <li><a href="#" class="lang" key="appointment">Appointment</a></li>
+              <li><a href="#" class="lang" key="dashboard">Dashboard</a></li>
+            </ul>
 
 
-  <div id="index-banner" class="parallax-container">
-         <!-- Nav bar Start-->
-<div class="navbar-fixed">
-  <nav class="navbackground navbackgroundColor " role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img src="images/logo.png" style="padding: 5px; height: 55px;"/></a>
-      <ul class="right hide-on-med-and-down navbar-fixed">
-        <li ><a href="#" class="active ">Home</a></li>
-        <li ><a href="#" class="">Appointment</a></li>
-        <li ><a href="#" class="">Dashboard</a></li>
-      </ul>
-      
+            <!-- For Mobile View-->
 
-      <!-- For Mobile View-->
-    
-    
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
 
- 
-</div>
-<ul id="nav-mobile" class="sidenav">
-  <img src="images/parallax/background_2.jpg" height="250px"/>
-  <li><a href="#"><i class="material-icons">home</i>Home</a></li>
-  <li><a href="#"><i class="material-icons">book_online</i>Appointment</a></li>
-  <li><a href="#"><i class="material-icons">dashboard</i>Dashboard</a></li>
-</ul>
-
-<!-- End Nav bar -->
-    <div class="section no-pad-bot">
-      <div class="container">
-        
-        <br><br>
-        <h2 class="header center  text-grey  main_header animate__animated animate__bounce animate__delay-1s">Online Patient Registration System</h2>
-        <div class="row center">
-          <div class="col s12 animate__animated animate__fadeInLeft animate__delay-2s"> 
-            <h4 class="header light  header_text ">Now getting an OPD appointment, lab reports and blood availability in any government hospital has become online & easy.
-           </h4>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           </div>
-          <!-- <div class="col s12 m4 l6 animate__animated animate__fadeInRight animate__delay-2s">
+        </nav>
+
+
+      </div>
+      <ul id="nav-mobile" class="sidenav">
+        <img src="images/parallax/background_2.jpg" height="250px" />
+        <li><a href="#" class="lang" key="home"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#" class="lang" key="appointment"></a>><i class="material-icons">book_online</i>Appointment</a></li>
+        <li><a href="#" class="lang" key="dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
+      </ul>
+
+      <!-- End Nav bar -->
+      <div class="section no-pad-bot">
+        <div class="container">
+
+          <br><br>
+          <h2 class="header center  text-grey  main_header 
+          animate__animated animate__bounce animate__delay-1s lang" key="mainHeader">Online
+            Patient Registration System</h2>
+          <div class="row center">
+            <div class="col s12 animate__animated animate__fadeInLeft animate__delay-2s">
+              <h4 class="header light  header_text lang" key="mainHeaderContent">
+                Now getting an OPD appointment, lab reports and blood availability
+                in any government hospital has become online & easy.
+              </h4>
+            </div>
+            <!-- <div class="col s12 m4 l6 animate__animated animate__fadeInRight animate__delay-2s">
 
             <a class="waves-effect waves-light btn header_button deep-orange accent-4 ">Book Teleconsultation Appointment</a><br>
             <a class="waves-effect waves-light btn header_button blue">Book Appointment Now</a><br>
@@ -72,368 +90,417 @@
             <a class="waves-effect waves-light btn header_button">Payment</a>
           </div>
            -->
-        </div>
+          </div>
 
-        <br><br>
+          <br><br>
 
-      </div>
-    </div>
-    <div class="parallax parallax_filter"><img src="images/parallax/background_2.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-  <!-- Button SLider-->
-<div class="row">
-  <div class="col s12">
-    <div class="carousel " >
-      <div class="card card_slider carousel-item blue" >
-        <div class="card-content center navbackgroundColor">
-      <h6 class="white-text">Book Appointment Now </h6>
-      <br>
-      <a class="btn-floating  info_button blue text-darken-2 "><i class="material-icons">arrow_forward_ios</i></a>
-    </div>
-  
-  </div>
-      <div class="card card_slider carousel-item  deep-orange" >
-        <div class="card-content center navbackgroundColor">
-         
-          <h6 class="white-text">Book Teleconsultation Appointment</h6>
-          <br>
-          <a class="btn-floating  info_button deep-orange text-darken-2 "><i class="material-icons">arrow_forward_ios</i></a>
         </div>
       </div>
-    
-
-      <div class="card card_slider carousel-item  green" >
-        <div class="card-content center navbackgroundColor">
-         
-          <h6 class="white-text">Blood Availabilty</h6>
-          <br>
-          <a class="btn-floating  info_button green text-darken-2 "><i class="material-icons">arrow_forward_ios</i></a>
-        </div>
-      </div>
-    
-      <div class="card card_slider carousel-item  red accent-2" >
-        <div class="card-content center navbackgroundColor">
-         
-          <h6 class="white-text">Payment</h6>
-          <br>
-          <a class="btn-floating  info_button red accent-2 text-darken-2 "><i class="material-icons">arrow_forward_ios</i></a>
-        </div>
-      </div>
-
-    
+      <div class="parallax parallax_filter"><img src="images/parallax/background_2.jpg"
+          alt="Unsplashed background img 1"></div>
     </div>
 
-  </div>
+    <!-- Button SLider-->
+    <div class="row">
+      <div class="col s12">
+        <div class="carousel ">
+          <div class="card card_slider carousel-item blue">
+            <div class="card-content center navbackgroundColor">
+              <h6 class="white-text lang" key="boookAppoinment">Book Appointment Now </h6>
+              <br>
+              <a class="btn-floating  info_button blue text-darken-2 "><i
+                  class="material-icons ">arrow_forward_ios</i></a>
+            </div>
 
-</div>
-<!-- End Button SLider-->
+          </div>
+          <div class="card card_slider carousel-item  deep-orange">
+            <div class="card-content center navbackgroundColor">
+
+              <h6 class="white-text lang" key="boookTeleconsulation">Book Teleconsultation Appointment</h6>
+              <br>
+              <a class="btn-floating  info_button deep-orange text-darken-2 "><i
+                  class="material-icons">arrow_forward_ios</i></a>
+            </div>
+          </div>
+
+
+          <div class="card card_slider carousel-item  green">
+            <div class="card-content center navbackgroundColor">
+
+              <h6 class="white-text lang" key="bloodAvailability">Blood Availability</h6>
+              <br>
+              <a class="btn-floating  info_button green text-darken-2 "><i
+                  class="material-icons">arrow_forward_ios</i></a>
+            </div>
+          </div>
+
+          <div class="card card_slider carousel-item  red accent-2">
+            <div class="card-content center navbackgroundColor">
+
+              <h6 class="white-text lang" key="payment">Payment</h6>
+              <br>
+              <a class="btn-floating  info_button red accent-2 text-darken-2 "><i
+                  class="material-icons ">arrow_forward_ios</i></a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- End Button SLider-->
 
     <!-- govt data section-->
     <div class="container">
       <div class="section">
         <div class="row  animate__animated animate__backInUp animate__delay-2s">
-     
+
           <div class="col s12 m4 l4">
-              <img src="images/govt/digital_india.png" class="image_container"/>
+            <img src="images/govt/digital_india.png" class="image_container" />
           </div>
 
           <div class="col s12 m4 l4">
-            <img src="images/govt/govt_of_it.gif" class="image_container"/>
+            <img src="images/govt/govt_of_it.gif" class="image_container" />
           </div>
 
           <div class="col s12 m4 l4">
-            <img src="images/govt/govt_of_family.png" class="image_container"/>
+            <img src="images/govt/govt_of_family.png" class="image_container" />
           </div>
         </div>
       </div>
     </div>
 
-      <!--carousel section-->
-      <div class="container">
-        <div class="section">
-    
-          <div class="row  animate__animated animate__fadeInUpBig animate__delay-2s">
-            <div class="col s12 center">
-              <div class="carousel carousel-slider">
-                <a class="carousel-item" href="#one!"><img src="images/slide/pmcare.jpg" ></a>
-                <a class="carousel-item" href="#two!"><img src="images/slide/1_duplicate.jpg"></a>
-              
-              </div>
-            
+    <!--carousel section-->
+    <div class="container">
+      <div class="section">
+
+        <div class="row  animate__animated animate__fadeInUpBig animate__delay-2s">
+          <div class="col s12 center">
+            <div class="carousel carousel-slider">
+              <a class="carousel-item" href="#one!"><img src="images/slide/pmcare.jpg"></a>
+              <a class="carousel-item" href="#two!"><img src="images/slide/1_duplicate.jpg"></a>
+
             </div>
+
           </div>
-    
-        </div>
-      </div>
-
-      <!-- covid info-->
-      <div class="container">
-        <div class="section">
-            <div class="row center">
-              <div class="output" id="output">
-                <h5 class="cursor red-text"></h5>
-                <p class="red-text"></p>
-              </div>
-              <!-- <strong class="red-text">All future online appointments through ORS of few Hospitals, on their request, are temporarily suspended in view of the COVID-19.</strong> -->
-            </div>
         </div>
 
       </div>
+    </div>
+
+    <!-- covid info-->
+    <div class="container">
+      <div class="section">
+        <div class="row center">
+          <div class="output" id="output">
+            <h5 class="cursor red-text"></h5>
+            <p class="red-text"></p>
+          </div>
+          <!-- <strong class="red-text">All future online appointments through ORS of few Hospitals, on their request, are temporarily suspended in view of the COVID-19.</strong> -->
+        </div>
+      </div>
+
+    </div>
 
 
 
 
-  <!-- info section -->
-  <div class="container " data-aos="fade-up"  data-aos-duration="300">
-    <div class="section">
-      <div class="row">
-        <div class="col s12">
+    <!-- info section -->
+    <div class="container " data-aos="fade-up" data-aos-duration="300">
+      <div class="section">
+        <div class="row">
+          <div class="col s12">
 
-          <h4 class="center ">FEATURES </h4>
-          <hr>
-          <p class="black-text">
+            <h4 class="center lang " key="features">FEATURES </h4>
+            <hr>
+            <p class="black-text lang" key="featureContent">
 
-            Online Registration System (ORS) is a framework to link various hospitals across the country for Aadhaar based online registration and appointment system, where counter based OPD registration and appointment system through Hospital Management Information System (HMIS) has been digitalized. The application has been hosted on the cloud services of NIC. Portal facilitates online appointments with various departments of different Hospitals using eKYC data of Aadhaar number, if patient's mobile number is registered with UIDAI. And in case mobile number is not registered with UIDAI it uses patient's name. New Patient will get appointment as well as Unique Health Identification (UHID) number. 
-            If Aadhaar number is already linked with UHID number, then appointment number will be given and UHID will remain same.
-          </p>
+              Online Registration System (ORS) is a framework to link various hospitals across the country for Aadhaar
+              based online registration and appointment system where counter based OPD registration and appointment
+              system through Hospital Management Information System (HMIS) has been digitalized. The application has
+              been hosted on the cloud services of NIC. Portal facilitates online appointments with various departments
+              of different Hospitals using eKYC data of Aadhaar number if patient's mobile number is registered with
+              UIDAI. And in case the mobile number is not registered with UIDAI it uses patient's name. New Patients will get
+              appointment as well as Unique Health Identification (UHID) number.
+              If Aadhaar number is already linked with UHID number, then appointment number will be given and UHID will
+              remain the same.
+            </p>
+
+          </div>
+
 
         </div>
 
 
-      </div>
 
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4 l4">
+            <div class="card info_card ">
 
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4 l4">
-          <div class="card info_card ">
-          
               <div class="card-title">
-              <div class="icon-block">
-                <h2 class="center blue-text"><i class="material-icons">flash_on</i></h2>
-                <h5 class="center blue-text">Simple appointment process</h5>
+                <div class="icon-block">
+                  <h2 class="center blue-text"><i class="material-icons">flash_on</i></h2>
+                  <h5 class="center blue-text lang" key="appintmentProcess">Simple Appointment Process</h5>
                 </div>
               </div>
-            <div class="card-content blue-text">
-              <p>For your first visit to hospital, registration and appointment with doctor is made simpler. 
-                All you have to do is verify yourself using Aadhaar Number, Select Hospital and Department, Select date of Appointment and receive SMS for Appointment.</p>
-            </div>
-          </div>
-        
-        </div>
-
-        <div class="col s12 m4 l4">
-          <div class="card info_card ">
-          
-            <div class="card-title">
-            <div class="icon-block">
-              <h2 class="center blue-text"><i class="material-icons">local_hospital</i></h2>
-              <h5 class="center blue-text">Hospital On Boarding</h5>
-             
+              <div class="card-content blue-text lang" key="appintmentProcessContent">
+                <p>For your first visit to hospital, registration and appointment with doctor is made simpler.
+                  All you have to do is verify yourself using Aadhaar Number, Select Hospital and Department, Select
+                  date of Appointment and receive SMS for Appointment.</p>
               </div>
             </div>
-          <div class="card-content blue-text">
-            <p>Hospitals can come on board this platform and provide their appointment slots for online booking by patients.
-               The system facilitates Hospitals to easily manage their registration and appointment process and monitor the flow of patients.</p>
-          </div>
-        </div>
-        </div>
 
-        <div class="col s12 m4 l4">
-          <div class="card info_card ">
-          
-            <div class="card-title">
-            <div class="icon-block">
-              <h2 class="center blue-text"><i class="material-icons">dashboard_customize</i></h2>
-              <h5 class="center blue-text">Dashboard Reports</h5>
+          </div>
+
+          <div class="col s12 m4 l4">
+            <div class="card info_card ">
+
+              <div class="card-title">
+                <div class="icon-block">
+                  <h2 class="center blue-text"><i class="material-icons">local_hospital</i></h2>
+                  <h5 class="center blue-text lang" key="hospitlaOnboarding">Hospital On Boarding</h5>
+
+                </div>
+              </div>
+              <div class="card-content blue-text">
+                <p class="lang" key="hospitlaOnboardingContnet">Hospitals can come on board this platform and provide their appointment slots for online booking by
+                  patients.
+                  The system facilitates Hospitals to easily manage their registration and appointment process and
+                  monitor the flow of patients.</p>
               </div>
             </div>
-          <div class="card-content blue-text">
-            <p>Total number of Hospitals for which appointment can be taken through web along with their departments for which online appointment can be taken can be seen in reports. 
-              Detail reports showing information about New and Old patients taking appointment through this portal can be seen.</p>
+          </div>
+
+          <div class="col s12 m4 l4">
+            <div class="card info_card ">
+
+              <div class="card-title">
+                <div class="icon-block">
+                  <h2 class="center blue-text"><i class="material-icons">dashboard_customize</i></h2>
+                  <h5 class="center blue-text lang" key="dashboardReports">Dashboard Reports</h5>
+                </div>
+              </div>
+              <div class="card-content blue-text ">
+                <p class="lang" key="dashboardContent">Total number of Hospitals for which appointment can be taken through web along with their departments
+                  for which online appointment can be taken can be seen in reports.
+                  Detail reports showing information about New and Old patients taking appointment through this portal
+                  can be seen.</p>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-          <h4 class="header center header_text">Every Hospitals has moved online, why stay behind?</h4>
-   
-        <div class="row center">
-
-          <div class="col s12 m4 l4">
-            <a class="waves-effect waves-light btn btn-large cyan hospital_feature_button">ORS OnBoarding Manual</a></div>
-          <div class="col s12 m4 l4">
-            <a class="waves-effect waves-light btn orange btn-large hospital_feature_button">Hospital Join Free</a></div>
-          <div class="col s12 m4 l4">
-            <a class="waves-effect waves-light btn green btn-large accent-3 hospital_feature_button">Hospital Login</a></div>
-        </div>
       </div>
     </div>
-    <div class="parallax  parallax_filter"><img src="images/parallax/backgroun_1.jpg" alt="Unsplashed background img 2"></div>
-  </div>
+
+
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <h4 class="header center header_text lang" key="whyOnBoard">Every Hospitals has moved online, why stay behind?</h4>
+
+          <div class="row center">
+
+            <div class="col s12 m4 l4">
+              <a class="waves-effect waves-light btn btn-large cyan hospital_feature_button lang" key="Manual">ORS OnBoarding Manual</a>
+            </div>
+            <div class="col s12 m4 l4">
+              <a class="waves-effect waves-light btn orange btn-large hospital_feature_button lang" key="joinFree">Hospital Join Free</a>
+            </div>
+            <div class="col s12 m4 l4">
+              <a class="waves-effect waves-light btn green btn-large accent-3 hospital_feature_button lang" key="login">Hospital
+                Login</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax  parallax_filter"><img src="images/parallax/backgroun_1.jpg"
+          alt="Unsplashed background img 2"></div>
+    </div>
 
 
 
-  <div class="container " data-aos="fade-up"  data-aos-duration="300">
-    <div class="section">
+    <div class="container " data-aos="fade-up" data-aos-duration="300">
+      <div class="section">
 
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Highlights</h4>
-          <hr/>
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>Highlights</h4>
+            <hr />
             <div class="row">
               <div class="col s12 m6 l4">
                 <div class="card card_data_blue">
-            
+
                   <div class="card-content">
                     <div class="row">
-                      <div class="col s1 l4 icon_col">  <div class="icon-block">
-                        <h4 class="center red-text data_icons"><i class=" red-text material-icons ">health_and_safety</i></h4>
-                     
-                        </div></div>
-                      <div class="col s11 l8 data_col"><div class="icon-block"> <p class="center blue-text">Number of Hospitals</p>
-                        <h4 class="center blue-text count">200 </h4> <br><a class="btn-floating  info_button blue"><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
+                      <div class="col s1 l4 icon_col">
+                        <div class="icon-block">
+                          <h4 class="center red-text data_icons"><i
+                              class=" red-text material-icons ">health_and_safety</i></h4>
+
+                        </div>
+                      </div>
+                      <div class="col s11 l8 data_col">
+                        <div class="icon-block">
+                          <p class="center blue-text lang" kye="numofHosp">Number of Hospitals</p>
+                          <h4 class="center blue-text count">200 </h4> <br><a class="btn-floating  info_button blue"><i
+                              class="material-icons">arrow_forward_ios</i></a>
+                        </div>
+                      </div>
 
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
               <div class="col s12 m6 l4">
                 <div class="card card_data_indigo">
-            
+
                   <div class="card-content">
                     <div class="row">
-                      <div class="col s1 l4 icon_col">  <div class="icon-block">
-                        <h4 class="center red-text data_icons"><i class=" red-text material-icons ">account_circle</i></h4>
-                     
-                        </div></div>
-                      <div class="col s11 l8 data_col"><div class="icon-block"> <p class="center indigo-text">Appointments Taken Today
-                      </p>
-                        <h4 class="center indigo-text count">2878  </h4> <br><a class="btn-floating  info_button indigo "><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
+                      <div class="col s1 l4 icon_col">
+                        <div class="icon-block">
+                          <h4 class="center red-text data_icons"><i class=" red-text material-icons ">account_circle</i>
+                          </h4>
+
+                        </div>
+                      </div>
+                      <div class="col s11 l8 data_col">
+                        <div class="icon-block">
+                          <p class="center indigo-text lang" key="appointmentsToday">Appointments Taken Today
+                          </p>
+                          <h4 class="center indigo-text count">2878 </h4> <br><a
+                            class="btn-floating  info_button indigo "><i
+                              class="material-icons">arrow_forward_ios</i></a>
+                        </div>
+                      </div>
 
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
               <div class="col s12 m6 l4">
                 <div class="card card_data_cyan">
-            
+
                   <div class="card-content">
                     <div class="row">
-                      <div class="col s1  l4 icon_col">  <div class="icon-block">
-                        <h4 class="center red-text data_icons"><i class=" red-text material-icons ">leaderboard</i></h4>
-                     
-                        </div></div>
-                      <div class="col s11 l8 data_col"><div class="icon-block"> <p class="center cyan-text">Total Online Appointments</p>
-                        <h4 class="center cyan-text count">3998103  </h4> <br><a class="btn-floating  info_button cyan"><i class="material-icons">arrow_forward_ios</i></a>  </div></div>
+                      <div class="col s1  l4 icon_col">
+                        <div class="icon-block">
+                          <h4 class="center red-text data_icons "><i class=" red-text material-icons ">leaderboard</i>
+                          </h4>
+
+                        </div>
+                      </div>
+                      <div class="col s11 l8 data_col">
+                        <div class="icon-block">
+                          <p class="center cyan-text lang" key="totalAppointments">Total Online Appointments</p>
+                          <h4 class="center cyan-text count">3998103 </h4> <br><a
+                            class="btn-floating  info_button cyan"><i class="material-icons">arrow_forward_ios</i></a>
+                        </div>
+                      </div>
 
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
 
             </div>
+          </div>
         </div>
-      </div>
 
-    </div>
-  </div>
-
- <!-- Bottom Modal Structure -->
- <div id="modal1" class="modal bottom-sheet">
-  <div class="modal-content">
-    <h5>Welcome to ORS</h5>
-   
-    <p> Select your prefered language </p>
-
-    <p>
-      <label>
-        <input name="group1" type="radio"  />
-        <span>English</span>
-      </label>
-      <label>
-        <input name="group1" type="radio" />
-        <span>Hindi</span>
-      </label>
-     
-    </p>
-
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-  </div>
-</div>
-
-
-  <footer class="page-footer blue">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text"> A DIGITAL INDIA INITIATIVE</h5>
-         
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Other Pages</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Faqs</a></li>
-            <li><a class="white-text" href="#!">Feedback</a></li>
-            <li><a class="white-text" href="#!">Contact</a></li>
-            <li><a class="white-text" href="#!">List of Modal Officers</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Languages</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Hindi</a></li>
-            <li><a class="white-text" href="#!">English</a></li>
-          
-          </ul>
-        </div>
       </div>
     </div>
-    <div class="footer-copyright">
+
+    <!-- Bottom Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h5 >Welcome to ORS</h5>
+
+        <p > Select your prefered language </p>
+
+        <p>
+          <label >
+            <input name="group1" type="radio" class="translate" id="hi"  />
+            <span>English</span>
+          </label>
+          <label>
+            <input name="group1" type="radio" class="translate" id="hi" />
+            <span>Hindi</span>
+          </label>
+
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+
+
+    <footer class="page-footer blue">
       <div class="container">
-       <strong class="center"> Developed by NIC Tripura</strong>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text lang"> A DIGITAL INDIA INITIATIVE</h5>
+
+
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text lang">Other Pages</h5>
+            <ul>
+              <li><a class="white-text lang" key="faq" href="#!">Faqs</a></li>
+              <li><a class="white-text lang" href="#!" key="feedBack">Feedback</a></li>
+              <li><a class="white-text lang"  key="contact" href="#!">Contact</a></li>
+              <li><a class="white-text lang" href="#!" key="modalOfficers">List of Modal Officers</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text lang" key="lang">Languages</h5>
+            <ul class="">
+              <li><a class="white-text lang translate" href="#!" key="hin" id="hi">Hindi</a></li>
+              <li><a class="white-text lang translate" href="#!" key="en" id="en">English</a></li>
+
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer-copyright">
+        <div class="container">
+          <strong class="center"> Developed by NIC Tripura</strong>
+        </div>
+      </div>
+    </footer>
 
-
+  </div>
   <!--  Scripts-->
   <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>	 -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript">	
-    $(window).load(function() { // makes sure the whole site is loaded
-    $('#status').fadeOut(); // will first fade out the loading animation
-    $('#preloader').delay(50).fadeOut(100); // will fade out the white DIV that covers the website.
-    $('body').delay(50).css({'overflow':'visible'});
+  <script type="text/javascript">
+    $(window).load(function () { // makes sure the whole site is loaded
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(50).fadeOut(100); // will fade out the white DIV that covers the website.
+      $('body').delay(50).css({
+        'overflow': 'visible'
+      });
+      $('#modal1').modal();
+      $('#modal1').modal('open');
     })
-  
-    </script>
-     <script src="js/material.js"></script>
-     <script src="js/init.js"></script>
-     <script src="js/custom.js"></script>
-     <script src="js/scoll.js"></script>
-     <script>
-       AOS.init();
-     </script>
-  </body>
- 
+  </script>
+  <script src="js/material.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/scoll.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 
 </html>
