@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+  var lang;
+  var textArrayEng, textArrayHindi = new Array();
   $(window).load(function () { // makes sure the whole site is loaded
     // $('#status').fadeOut(); // will first fade out the loading animation
     // $('#preloader').delay(50).fadeOut(100); // will fade out the white DIV that covers the website.
@@ -19,7 +20,7 @@ $(document).ready(function(){
 
   
   })
-
+ 
 
   var arrLang = new Array();
         arrLang['en'] = new Array();
@@ -103,8 +104,8 @@ $(document).ready(function(){
   //language translator
   $(function() {
     $('.translate').click(function() {
-        var lang = $(this).attr('id');
-        console.log("Language Changed")
+         lang = $(this).attr('id');
+        
 
         $('.lang').each(function(index, item) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
@@ -141,10 +142,18 @@ $(window).scroll(function() { // check if scroll event happened
     a = 0,
     isBackspacing = false,
     isParagraph = false;
-    var textArray = [
+    textArrayEng = [
       "All future online appointments through ORS of few Hospitals, on their request, are temporarily suspended in view of the COVID-19.", 
       "Advisory for patients planning to visit NIMHANS, Bengaluru", 
       "COVID-19 Helpline No. and Dashboard of MoHFW ",
+      "कुछ अस्पतालों के ओआरएस के माध्यम से भविष्य में होने वाली सभी ऑनलाइन नियुक्तियों को सीओवीआईडी ​​-19 के मद्देनजर अस्थायी रूप से निलंबित कर दिया गया है।",
+      "COVID-19 हेल्पलाइन नंबर और MoHFW का डैशबोर्ड"
+    ];
+
+    textArrayHindi = [
+      "कुछ अस्पतालों के ओआरएस के माध्यम से भविष्य में होने वाली सभी ऑनलाइन नियुक्तियों को सीओवीआईडी ​​-19 के मद्देनजर अस्थायी रूप से निलंबित कर दिया गया है।", 
+      "Advisory for patients planning to visit NIMHANS, Bengaluru", 
+      "COVID-19 हेल्पलाइन नंबर और MoHFW का डैशबोर्ड ",
     ];
     
     // Speed (in milliseconds) of typing.
@@ -152,7 +161,8 @@ $(window).scroll(function() { // check if scroll event happened
         speedWait = 1000, // Wait between typing and backspacing
         speedBetweenLines = 1000, //Wait between first and second lines
         speedBackspace = 25; //Backspace Speed
-        typeWriter("output", textArray);
+        console.log('S');
+        typeWriter("output", textArrayEng);
 
         function typeWriter(id, ar) {
           var element = $("#" + id),
