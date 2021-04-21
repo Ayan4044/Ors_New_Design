@@ -132,12 +132,12 @@ nav ul a {
   /* Cursor Styling */
   
   .cursor::after {
-    content:'';
+    content:'|';
     display:inline-block;
     margin-left:3px;
     background-color:white;
     animation-name:blink;
-    animation-duration:0.5s;
+    animation-duration:1.5s;
     animation-iteration-count: infinite;
   }
   h1.cursor::after {
@@ -186,7 +186,7 @@ nav ul a {
   
     position: fixed;
     left: 45%;
-    top: 50%;
+    top: 40%;
     background-position: center;
     /* is width and height divided by two */
   }
@@ -273,8 +273,7 @@ nav ul a {
     }
 
     .card_slider{
-      width: 200px !important;
-      height: 250px  !important;
+      font-size: 14px;
     }
 
     .hospital_feature_button{
@@ -313,6 +312,3 @@ nav ul a {
 
 
 /*----------------- Card Slider ------------------------*/
-.card_slider{
-  width: 20% !important;
-}

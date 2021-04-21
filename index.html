@@ -62,9 +62,9 @@
       </div>
       <ul id="nav-mobile" class="sidenav">
         <img src="images/parallax/background_2.jpg" height="250px" />
-        <li><a href="#" class="lang" key="home"><i class="material-icons">home</i>Home</a></li>
-        <li><a href="#" class="lang" key="appointment"></a>><i class="material-icons">book_online</i>Appointment</a></li>
-        <li><a href="#" class="lang" key="dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
+        <li><a href="#" class="lang sidenav-close" key="home"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#" class="lang sidenav-close" key="appointment"><i class="material-icons">book_online</i>Appointment</a></li>
+        <li><a href="#" class="lang sidenav-close" key="dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
       </ul>
 
       <!-- End Nav bar -->
@@ -102,7 +102,8 @@
 
     <!-- Button SLider-->
     <div class="row">
-      <div class="col s12">
+      <div class="col s12 m4 l2"></div>
+      <div class="col s12 m4 l8">
         <div class="carousel ">
           <div class="card card_slider carousel-item blue">
             <div class="card-content center navbackgroundColor">
@@ -148,6 +149,10 @@
         </div>
 
       </div>
+      <div class="col s12 m4 l2"></div>
+       
+
+
 
     </div>
     <!-- End Button SLider-->
@@ -328,7 +333,7 @@
         <div class="row">
           <div class="col s12 center">
             <h3><i class="mdi-content-send brown-text"></i></h3>
-            <h4>Highlights</h4>
+            <h4 class="lang" key="highLights">Highlights</h4>
             <hr />
             <div class="row">
               <div class="col s12 m6 l4">
@@ -425,20 +430,20 @@
 
         <p>
           <label >
-            <input name="group1" type="radio" class="translate" id="hi"  />
+            <input name="group1" type="radio" class="translate modal-close" id="en"  />
             <span>English</span>
           </label>
           <label>
-            <input name="group1" type="radio" class="translate" id="hi" />
+            <input name="group1" type="radio" class="translate modal-close" id="hi" />
             <span>Hindi</span>
           </label>
 
         </p>
 
       </div>
-      <div class="modal-footer">
+      <!-- <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-      </div>
+      </div> -->
     </div>
 
 
@@ -446,12 +451,12 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text lang"> A DIGITAL INDIA INITIATIVE</h5>
+            <h5 class="white-text lang" key="digitalIndia"> A DIGITAL INDIA INITIATIVE</h5>
 
 
           </div>
           <div class="col l3 s12">
-            <h5 class="white-text lang">Other Pages</h5>
+            <h5 class="white-text lang" key="pages">Other Pages</h5>
             <ul>
               <li><a class="white-text lang" key="faq" href="#!">Faqs</a></li>
               <li><a class="white-text lang" href="#!" key="feedBack">Feedback</a></li>

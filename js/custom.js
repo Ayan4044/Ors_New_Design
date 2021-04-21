@@ -8,8 +8,10 @@ $(document).ready(function(){
     // });
 
     if ($('#preloader').length) {
+      $('.body_content').hide();
       $('#preloader').delay(100).fadeOut('slow', function () {
           $(this).remove();
+          $('.body_content').show();
           $('#modal1').modal();
           $('#modal1').modal('open');
       });
@@ -53,7 +55,9 @@ $(document).ready(function(){
         arrLang['en']['lang'] = 'Languages';
         arrLang['en']['hin'] = 'Hindi';
         arrLang['en']['en'] = 'English';
-       
+        arrLang['en']['digitalIndia']='A DIGITAL INDIA INITIATIVE';
+        arrLang['en']['pages']='Other Pages';
+        arrLang['en']['highLights']='Highlights';
 
 
         arrLang['hi']['home'] = ' होमपेज';
@@ -88,10 +92,13 @@ $(document).ready(function(){
         arrLang['hi']['lang'] = 'भाषा';
         arrLang['hi']['hin'] = 'हिंदी';
         arrLang['hi']['en'] = 'अंग्रेज़ी';
+        arrLang['hi']['digitalIndia']='एक डिजिटल इंडिया इनसाइट';
+        arrLang['hi']['pages']='अन्य पेज';
+        arrLang['hi']['highLights']='हाइलाइट';
        
 
   getWidth();
-  getCard();
+  //getCard();
  
   //language translator
   $(function() {
